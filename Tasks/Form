@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>register form</title>
+</head>
+<body>
+
+    <hr>
+
+    <form>
+        <fieldset>
+
+            <legend>register form</legend>
+
+            <h2>Regisrer form</h2>
+
+            <label>First Name:</label>
+            <input type="text" name="first_Name" maxlength="5" pattern="[A-Za-z]+" required>
+
+            <label>email:</label>
+            <input type="email" name="email" required><br><br>
+
+            <label>phone number:</label>
+            <input type="tel" name="phone" maxlength="11" pattern="01[0125][0-9]{8}" required><br><br>
+
+            <label>File:</label>
+            <input type="file" name="image" accept=".png"><br><br>
+
+            <label>courses:</label>
+            <input list="courses" name="course">
+
+            <datalist id="courses">
+                <option value="HTML">
+                <option value="CSS">
+                <option value="JavaScript">
+                <option value="PHP">
+                <option value="Python">
+            </datalist>
+            <br><br>
+
+            <label>date:</label>
+            <input type="date" name="date" required><br><br>
+
+            <label>comment:</label><br>
+            <textarea name="comment" rows="5" cols="30"></textarea><br><br>
+
+            <label>range (100 - 200):</label><br>
+            <input type="range" name="range" min="100" max="200"><br><br>
+
+            <label>gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male" checked>
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br><br>
+
+            <label>Tracks:</label><br>
+
+            <input type="checkbox" name="track" value="Frontend"> Frontend <br>
+
+            <input type="checkbox" name="track" value="Computer vision"> CV <br>
+
+            <input type="checkbox" name="track" value="Machine Learning"> ML <br><br>
+
+            <input type="submit" value="Register">
+            <input type="reset" value="Reset">
+
+        </fieldset>
+    </form>
+
+</body>
+</html>
