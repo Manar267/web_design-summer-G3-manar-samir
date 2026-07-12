@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    flex-wrap: wrap;
+}
+
+.news-card {
+    background-color: #fff;
+    flex: 1;
+    min-width: 300px;
+    max-width: 380px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    overflow: visible;
+}
+
+.card-header {
+    position: relative;
+}
+
+.img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.main-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.read-more {
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.read-more:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.img-wrapper:hover .overlay {
+    opacity: 1;
+}
+
+.meta-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 8px 15px;
+    display: flex;
+    gap: 15px;
+    font-size: 11px;
+    color: #333333;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.meta-info i {
+    color: #111111;
+    margin-right: 3px;
+}
+
+.highlight-link {
+    color: #00b4d8;
+    text-decoration: none;
+}
+
+.highlight-link:hover {
+    text-decoration: underline;
+}
+
+.author-avatar {
+    position: absolute;
+    bottom: -35px;
+    right: 20px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    z-index: 3;
+}
+
+.author-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 50px 25px 25px 25px;
+}
+
+.card-title {
+    color: #00b4d8;
+    font-size: 16px;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+    position: relative;
+}
+
+.card-title::after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 3px;
+    background-color: #333;
+    margin-top: 8px;
+}
+
+.card-text {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
