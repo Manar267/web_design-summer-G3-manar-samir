@@ -1,0 +1,327 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    max-width: 1200px;
+    padding: 20px;
+}
+.card {
+    width: 320px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+.card-image {
+    overflow: hidden;
+}
+.card-image img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+.basic-card .card-image img:hover {
+    filter: blur(4px);
+    opacity: 0.7;
+}
+.card-content {
+    padding: 15px;
+}
+.card-content h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.1rem;
+    color: #000000;
+    font-weight: bold;
+}
+.card-content p {
+    margin: 0 0 15px 0;
+    font-size: 0.85rem;
+    color: #333333;
+    line-height: 1.4;
+}
+.read-more {
+    color: #6f42c1;
+    text-decoration: underline;
+    font-size: 1.1rem;
+    display: inline-block;
+}
+.faded-card {
+    opacity: 0.6;
+}
+.circle-card {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+.circle-card .circle-img {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.circle-card .circle-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.circle-card .card-content {
+    background-color: #ffffff;
+    padding: 15px;
+}
+
+/**/
+
+body, .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px; 
+}
+.new-section-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+.inputs-box {
+    border: 2px solid #0000ff;
+    outline: 2px solid #ff0000;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+/*problem here*/
+.inputs-box > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 48%;
+}
+.inputs-box input[type="text"] {
+    border: none;
+    border-bottom: 2px solid #0a8080;
+    padding: 8px 0;
+    font-size: 16px;
+    outline: none;
+    background: transparent;
+}
+.inputs-box > div:first-child input[type="text"]:nth-child(2) {
+    background-color: #a2d2df;
+    padding: 10px;
+}
+.inputs-box label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    margin-top: 5px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+table th {
+    background-color: #0a8080;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 18px;
+}
+table td {
+    padding: 15px 25px;
+    border: 1px solid #d3d3d3;
+}
+table th:first-child, 
+table td:first-child {
+    border-right: 1px solid #ffffff;
+}
+table tbody tr:nth-child(odd) {
+    background-color: #e6f2f5;
+}
+table tbody tr:nth-child(even) {
+    background-color: #eaeaea;
+}
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+ul li {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+ul li:first-child {
+    color: #ff0000;
+}
+ul li:last-child {
+    color: #0000ff;
+}
+/**/
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+.travel-card {
+    width: 380px;
+    height: 380px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+.card-image-wrapper {
+    width: 100%;
+    height: 100%;
+}
+.main-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.card-main-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 25px;
+    box-sizing: border-box;
+    transform: translateY(150px);
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.travel-card:hover .card-main-content {
+    transform: translateY(0);
+}
+.card-header-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.card-header-info h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    color: #111111;
+    font-weight: bold;
+}
+.card-header-info .date {
+    font-size: 0.85rem;
+    color: #777777;
+    font-weight: 500;
+}
+.flag-wrapper {
+    width: 40px;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.egypt-flag {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.card-hidden-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.card-hidden-details .seats {
+    font-size: 0.85rem;
+    color: #555555;
+    font-weight: bold;
+}
+.card-hidden-details .description {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555555;
+    line-height: 1.6;
+}
+.card-hidden-details .event-link {
+    color: #0a8080;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    display: inline-block;
+}
+.test-transform-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto;
+    box-sizing: border-box;
+}
+.simple-long-card {
+    width: 400px;
+    height: 120px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+.simple-long-card p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #333333;
+}
+.test-transform-section .simple-long-card:first-child:hover {
+    transform: scale(1.05);
+}
+.test-transform-section .simple-long-card:last-child:hover {
+    transform: translateY(-10px);
+}
+
+.transform-card:hover {
+    transform: translateX(100px);
+    transform: translateX(70%);
+    transform: translateX(-70%);
+    transform: translateY(30%);
+    transform: translateY(-30%);
+    transform: translateY(100px);
+    transform: translate(50%, 50%);
+    transform: rotate(40deg);
+    transform: rotate(-40deg);
+    transform: skewX(50deg);
+    transform: skewX(-50deg);
+    transform: skewY(-50deg);
+    transform: scaleX(1.5);
+    transform: scaleX(0.5);
+    transform: scaleX(1);
+    transform: scaleY(1.5);
+    transform: scaleY(0.5);
+    transform: scale(1.2);
+    transform: matrix(1.5, 0, 0.3, 0.5, 100, 50);
+    transform: rotate(20deg);
+    transform: translate(100px) rotate(20deg);
+    transform: scale(1.5) rotate(20deg);
+}
