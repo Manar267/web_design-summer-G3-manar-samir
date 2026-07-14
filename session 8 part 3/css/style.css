@@ -1,0 +1,81 @@
+/* Reset Style */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montenegrin Gothic One", serif;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/* Global style */
+.container{
+    width: 80%;
+    margin: auto;
+}
+.padding-top-bottom{
+
+    padding: 5% 0%;
+}
+
+.prespective{
+    perspective: 1000px;
+}
+
+.d-flex{
+    display: flex;
+}
+
+
+/* Custom style */
+
+.rotate-card{
+    width: 30%;
+    padding: 6% 2%;
+    background-color: rgb(146, 24, 116);
+    color: white;
+    border-radius: 10px;
+    transition: 3s;
+}
+.rotate-card:hover{
+    transform: rotateY(180deg);
+}
+
+.flip-card{
+    width: 30%;
+
+}
+.card-inner{
+    position: relative;
+    transition: 2s;
+    transform-style: preserve-3d;
+}
+.card-front{
+    background-color: rgb(58, 9, 236);
+
+}
+.card-back{
+    background-color: rgb(218, 32, 32);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transform: rotateY(180deg);
+}
+
+.card-front , .card-back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+    height: 200px;
+    border-radius: 10px;
+    backface-visibility: hidden;
+
+}
+
+.flip-card:hover .card-inner{
+    transform: rotateY(180deg);
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma-Style Flip Card</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="card-container">
+        <div class="figma-card">
+
+            <div class="card-face face-front">
+                <div class="front-content">
+                    <div class="icon-wrapper">
+                        <svg class="map-icon" viewBox="0 0 24 24" fill="none" stroke="#4CAF50" stroke-width="2">
+                            <path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3V6z" />
+                            <line x1="9" y1="3" x2="9" y2="18" />
+                            <line x1="15" y1="6" x2="15" y2="21" />
+                        </svg>
+                    </div>
+                    <h2 class="card-title">Financial Sector<br>Development<br>Program</h2>
+                    <p class="card-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea saepe eaque fugit, laboriosam cum
+                        impedit labore corrupti facilis accusantium dolorem.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <span class="read-more">Read More</span>
+                    <div class="circle-btn">
+                        <span class="arrow">→</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-face face-back"
+                style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIOgda_eaq-wqBtfpkeARGgB22OwIhj9Z8HZdhsM3kHwegEfeQIg0Pfsk&s=10');">
+                <div class="overlay"></div>
+                <div class="back-content">
+                    <h2 class="back-title">Financial Sector<br>Development<br>Program</h2>
+                    <div class="circle-btn-diagonal">
+                        <span class="arrow-diagonal">↗</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
